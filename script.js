@@ -55,8 +55,9 @@ function cargarDatosDePrueba() {
     }
   ];
   mostrarNoticias(noticiasDeRespaldo);
-  contenedor.innerHTML += "<p class='error-msg'>Nota: Estás viendo noticias de respaldo debido a u error de conexión</p>";
+  contenedor.innerHTML += "<p class='error-msg'>Nota: Estás viendo noticias de respaldo debido a un error de conexión</p>";
 }
 
 btnRefrescar.addEventListener('click', obtenerNoticias);
 window.onload = obtenerNoticias;
+
